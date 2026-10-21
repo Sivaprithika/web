@@ -1,1 +1,9 @@
 https://chatgpt.com/share/6ad82a63-073c-83e8-9af8-2c772f6f37ec?ogimg=plain
+
+
+npm run dev
+cd "$env:USERPROFILE\Downloads\web\frontend"
+python -m http.server 5500 --bind 127.0.0.1
+cd "$env:USERPROFILE\Downloads\web"
+python -m pip install selenium
+python .\test_rescueconnect.py
